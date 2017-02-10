@@ -1,0 +1,21 @@
+{
+  "name": "vimeo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile": "webpack",
+    "dev": "webpack-dev-server",
+    "run": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress --colors --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
