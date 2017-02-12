@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.14.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
@@ -19,6 +20,7 @@
   "scripts": {
     "compile": "webpack",
     "dev": "webpack-dev-server",
+    "dist": "npm run compile;cp public/bundle.js dist/",
     "run": "node server.js",
     "setup": "./setup.sh",
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,9 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Layout from './layout'
+import Channel from './components/channel';
+
+const regexp = /channels\/([a-z]+)/;
+const path = window.location.hash;
+const name = regexp.exec(path)[1];
+const channel = {
+  name: name,
+  title: "Staff Picks",
+  description: "A curated list of awesome videos, " +
+    "courtesy of the Staff at Vimeo."
+}
 
 ReactDOM.render(
-  <Layout/>,
+  <Channel channel={channel}/>,
   document.getElementById('root')
 )
-
