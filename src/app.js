@@ -8,7 +8,7 @@ const name = regexp.exec(path)[1];
 const channel = {
   name: name,
   title: "Staff Picks",
-  description: "A curated list of awesome videos, " +
+  tagline: "A curated list of awesome videos, " +
     "courtesy of the Staff at Vimeo."
 }
 

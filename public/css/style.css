@@ -1,8 +1,70 @@
+.channel {
+  background-color: #EEEEEE;
+}
+
 .header {
   background-color: #333333;
+  padding: 20px;
 }
 
 .header__title {
   color: white;
   font-weight: bold;
 }
+
+.header__tagline {
+  color: white;
+  font-weight: medium;
+}
+
+.grid {
+  padding: 20px;
+}
+
+@media (min-width: 550px) {
+  .grid {
+    padding: 40px;
+  }
+}
+
+.grid__box {
+  margin-bottom: 4%;
+}
+
+@media (min-width: 550px) {
+  .grid__box {
+    margin-bottom: 12%;
+  }
+}
+
+.video {
+  background-color: #F5F5F5;
+  padding: 15px;
+  box-shadow: 0px 1px 9px rgba(0,0,0,0.25);
+}
+
+.video:hover {
+  background-color: #F9F9F9;
+  box-shadow: 0px 1px 5px rgba(0,150,250,0.25);
+}
+
+.video__cover {
+  height: 196px;
+  width: 325px;
+  object-fit: cover;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

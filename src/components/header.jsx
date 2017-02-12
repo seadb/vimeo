@@ -4,8 +4,8 @@ const Header = (props) => (
     <h1 className="header__title">
       {props.channel.title}
     </h1>
-    <p>
-      {props.channel.description}
+    <p className="header__tagline">
+      {props.channel.tagline}
     </p>
   </header>
 )

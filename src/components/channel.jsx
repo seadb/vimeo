@@ -1,6 +1,7 @@
 import React from 'react'
 import api from '../api'
 import Header from './header'
+import Grid from './grid'
 //import Logo from '../components/Logo';
 //import Nav from '../components/Nav';
 
@@ -21,8 +22,9 @@ class Channel extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="channel">
         <Header channel={this.props.channel}/>
+        <Grid videos={this.state.videos}/>
       </div>
     );
   }
