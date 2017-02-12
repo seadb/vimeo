@@ -20,6 +20,7 @@
     "compile": "webpack",
     "dev": "webpack-dev-server",
     "run": "node server.js",
+    "setup": "./setup.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --progress --colors --watch"
   },
