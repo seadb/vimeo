@@ -2,8 +2,6 @@ import React from 'react'
 import api from '../api'
 import Header from './header'
 import Grid from './grid'
-//import Logo from '../components/Logo';
-//import Nav from '../components/Nav';
 
 class Channel extends React.Component {
   constructor(props) {
