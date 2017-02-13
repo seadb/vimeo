@@ -14,7 +14,7 @@
 
 .header__tagline {
   color: white;
-  font-weight: medium;
+  font-weight: 600;
 }
 
 .grid {
@@ -39,8 +39,12 @@
 
 .video {
   background-color: #F5F5F5;
-  padding: 15px;
+  box-sizing: border-box;
   box-shadow: 0px 1px 9px rgba(0,0,0,0.25);
+  padding: 25px;
+  position: relative;
+  height: 450px;
+  width: 370px;
 }
 
 .video:hover {
@@ -49,9 +53,58 @@
 }
 
 .video__cover {
-  height: 196px;
-  width: 325px;
+  border-radius: 2px;
+  display: block;
+  height: 275px;
+  width: 319px;
   object-fit: cover;
+  margin: 0 auto;
+}
+
+.video__title {
+  color: #447777;
+  height: 1.6em;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px auto;
+  text-align: center;
+  width: 319px;
+  /* truncate text */
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.video__description {
+  color: #566670;
+  font-size: 15px;
+  text-align: center;
+  width: 319px;
+}
+
+.video__footer {
+  position: absolute;
+  bottom: 25px;
+  color: #566670;
+  font-size: 13px;
+  font-weight: 600;
+}
+.video__footer--right {
+  right: 25px;
+}
+
+.video__stats-icon {
+  color: #333333;
+  margin: 0 5px 0 10px;
+  font-size: 15px;
+}
+
+.video__user-icon {
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 8px;
+  vertical-align: bottom;
 }
 
 /* Larger than mobile */
