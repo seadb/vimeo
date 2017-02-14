@@ -20,3 +20,7 @@ Development
 2. `$ npm run watch`
 
 3. Open your browser to [http://localhost:8080/#/channels/staffpicks](http://localhost:8080/#/channels/staffpicks)
+
+![screenshot](https://github.com/seadb/vimeo/raw/master/screenshot.png "screenshot")
+
+
