@@ -7,6 +7,7 @@ const Header = (props) => (
     <p className="header__tagline">
       {props.channel.tagline}
     </p>
+    <img src="public/img/banner.png" className="header__banner"/>
   </header>
 )
 export default Header
