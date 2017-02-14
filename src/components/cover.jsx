@@ -15,8 +15,9 @@ const Cover = (props) => (
       <span className="cover__play-icon">
         <i className="fa fa-play-circle" aria-hidden="true"></i>
       </span>
-      <div className="cover__length">
-        {hms(props.video.duration)}
+      <div className="cover__length hover--pop">
+        <i className="fa fa-clock-o" aria-hidden="true"></i>&nbsp;
+        {props.video.duration ? hms(props.video.duration) : ""}
       </div>
     </div>
   </div>

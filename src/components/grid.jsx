@@ -10,9 +10,9 @@ const Grid = (props) => {
     </div>
   ))
   return (
-    <div className="grid">
+    <section className="grid" id="videos">
       {videos}
-    </div>
+    </section>
   )
 }
 

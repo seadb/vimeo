@@ -9,10 +9,6 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-if (!process.env.NODE_ENV) {
-  throw new Error("Please set NODE_ENV to 'development' or 'production'");
-}
-
 var host = 'localhost';
 var port = 8080;
 app.listen(port, host, () => {

@@ -6,7 +6,7 @@ import Grid from './grid'
 class Channel extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { videos : []};
+    this.state = { videos : [], error: ""};
   }
   componentDidMount() {
     api.getChannelVideos(this.props.channel.name)
@@ -16,13 +16,19 @@ class Channel extends React.Component {
     })
     .catch((error) => {
       console.log(error);
+      this.setState({error: "An error occurred while loading the videos."});
     });
   }
   render() {
     return (
       <div className="channel">
         <Header channel={this.props.channel}/>
-        <Grid videos={this.state.videos}/>
+        { this.state.error
+          ?
+            <h2 className="error">{this.state.error}</h2>
+          :
+            <Grid videos={this.state.videos}/>
+        }
       </div>
     );
   }

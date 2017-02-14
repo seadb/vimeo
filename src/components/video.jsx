@@ -19,18 +19,18 @@ const Video = (props) => {
       <TextTruncate line={2} truncateText="…" text={video.description}/>
     </div>
     <div className="video__footer">
-      <a href={video.user_url} className="video__user">
-        <img src={video.user_portrait_small} className="video__user-icon"/>
-        {video.user_name}
+      <a href={video.user_url}>
+        <img src={video.user_portrait_small} className="video__user-icon hover--pop"/>
+        <span className="video__user hover--pop">{video.user_name}</span>
       </a>
     </div>
     {video.stats_number_of_likes ?
     <div className="video__footer video__footer--right">
-      <i className="fa fa-eye video__stats-icon" aria-hidden="true"/>
+      <i className="fa fa-eye video__stats-icon hover--color" aria-hidden="true"/>
       {kilo(video.stats_number_of_plays)}
-      <i className="fa fa-thumbs-up video__stats-icon" aria-hidden="true"/>
+      <i className="fa fa-thumbs-up video__stats-icon hover--color" aria-hidden="true"/>
       {kilo(video.stats_number_of_likes)}
-      <i className="fa fa-comment video__stats-icon" aria-hidden="true"/>
+      <i className="fa fa-comment video__stats-icon hover--color" aria-hidden="true"/>
       {kilo(video.stats_number_of_comments)}
     </div>
     : ""}

@@ -8,10 +8,10 @@ Setup
 ---
 ```
 git clone git@github.com:seadb/vimeo.git
-export NODE_ENV="production"
 ./setup.sh
 npm run start
 ```
+Open your browser to [http://localhost:8080/#/channels/staffpicks](http://localhost:8080/#/channels/staffpicks)
 
 Development
 ---
@@ -19,4 +19,4 @@ Development
 
 2. `$ npm run watch`
 
-3. Open your browser to [http://localhost:8080/](http://localhost:8080/).
+3. Open your browser to [http://localhost:8080/#/channels/staffpicks](http://localhost:8080/#/channels/staffpicks)
